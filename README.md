@@ -34,6 +34,14 @@
 
 ---
 
+## Installation
+
+Vous pouvez installer le module directement depuis GitHub avec `pip` :
+You can install the module directly from GitHub using `pip`:
+
+pip install git+[https://github.com/MichelRobitaille/dpsp.git](https://github.com/MichelRobitaille/dpsp.git)
+
+----
 ## Utilisation Rapide / Quick Start
 
 ```python
@@ -48,4 +56,5 @@ time = np.arange(0, 61, 6)
 psa_values = 5 + (0.7 * time)
 
 # Calcul de survie / Survival calculation
+
 survival = model.predict_survival(time, psa_values)
